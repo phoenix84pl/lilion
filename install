@@ -4,6 +4,6 @@ if [ $# -eq 0 ]
 	then
 		echo "Brak argumentu. Podaj nazwę projektu po spacji wywołując: $0 nazwa"
 	else
-	sudo cp -Rp init /var/www/html/$1
+	sudo cp -Rp init/* /var/www/html/$1
 	./update $1
 fi
